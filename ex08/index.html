@@ -1,0 +1,115 @@
+<!DOCTYPE html > 
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Atividade de fixação</title>
+            <script>
+                var nome = prompt('Digite o seu nome ')
+                var altura = prompt('Qual a sua altura? CM : ')
+                var peso = prompt('Qual o seu peso KG? ')
+                var metros = (altura / 100)
+                var peso = parseFloat(peso)
+                var metros = parseFloat(metros) 
+                
+                var resposta = peso / ( metros * metros)
+
+                
+               
+               
+                  if (resposta < 16 ) {
+                    
+                 var classificados =  document.write('Abaixo do peso muito grave ')
+
+
+
+               
+                
+
+
+
+
+                  
+
+                } else if(resposta >= 16 && resposta <= 16.99  ) {
+
+
+                    var classificados = 'Baixo peso grave '
+
+
+
+
+                } else if (resposta >= 17 && resposta <= 18.49) {
+
+
+                    var classificados = 'Baixo peso'
+
+
+
+
+                } else if (resposta >= 18.50 && resposta <= 24.99 ) {
+
+
+                    var classificados =  'Peso normal '
+
+
+
+
+
+                }else if (resposta >= 25 && resposta <= 29.99 ) {
+
+
+                    var classificados = 'Sobrepeso'
+
+
+
+                } else if (resposta == 30 || resposta <= 34.99) {
+
+
+                    var classificados = 'Obesidade grau 1 '
+
+
+
+
+                } else if(resposta >= 35 && resposta <= 39.99) {
+
+
+                    var classificados = 'Obesidade grau 2'
+
+
+
+
+                } else {
+
+
+                    var classificados = 'Obesidade morbida'
+
+
+
+                } //Fim condicional 
+
+
+                document.write(nome + ' possui indice de massa corporal igual a ' + parseInt(resposta) + ', sendo classificado como ' + classificados   )
+                
+                console.log(resposta)
+
+
+
+
+
+            </script>
+
+
+        </head>
+        <body>
+            
+
+
+
+
+        </body>
+
+
+
+
+    </html>

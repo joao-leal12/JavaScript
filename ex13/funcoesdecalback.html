@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcões de calback</title>
+    <script> 
+    //Inicio de programa 
+        var nota_1 = prompt('Qual foi a sua primeira nota ? ')
+        var nota_2 = prompt ('Qual foi a sua segunda nota ? ')
+        var nome = prompt('Digite o seu Nome')
+        var call_um = function (titulo, descricao) {
+            document.write('Parabens, você foi ' + titulo + '!!')
+
+
+        } //Primeiro callback 
+
+        var call_dois = function (erro, recuperacao) {
+
+            document.write('Que pena' + erro + 'Tente na proxima. ')
+
+
+
+
+        } //Final da segunda função de callback    
+        
+        function media (x, l, callbackSucesso, callbackErro ) {
+
+            var media = (parseFloat(x) + parseFloat(l) )/2 
+
+            if (media >= 7 ) { 
+
+                callbackSucesso ('Aprovado', 'Parabéns !! ')
+
+
+
+
+            } else if (media <= 7) {
+
+
+                callbackErro('Reprovado', 'Recuperação' )
+
+
+
+            }
+
+            
+            
+
+
+        }
+
+
+        media (nota_1, nota_2, call_um, call_dois )
+
+       
+
+
+    </script> <!--Fim programa-->
+
+</head>
+<body>
+    
+</body>
+</html>

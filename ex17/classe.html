@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando </title>
+
+<style>
+    .divisao1{
+
+        background-color: red; 
+        width: 150px; 
+        height: 150px;
+        border-radius: 12px; 
+        box-shadow: 1px 1px 3px black; 
+
+
+    }
+
+    .divisao2{
+
+        background: blue ; 
+        width: 150px; 
+        height: 150px; 
+        border-radius: 15px; 
+        box-shadow: 2px 2px 2px black ; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%);
+
+
+
+    }
+
+
+
+</style>
+<script>
+
+    function aplicar() {
+
+       document.getElementById('especial').className ='divisao2'
+
+
+      
+
+       
+
+    }
+
+    function retirar ( ) {
+
+        document.getElementById('especial').className='divisao1'
+
+
+
+    }
+
+
+    aplicar()
+
+
+</script>
+</head>
+<body>
+    <button type="button" onclick="aplicar()">Aplicar Classe </button>
+  
+    <button type="button" onclick="retirar()" > Voltar ao estilo </button>
+    <div class="divisao1" id="especial"></div>
+
+</body>
+</html>

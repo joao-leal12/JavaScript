@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Atividade </title>
+    <style>
+
+        .personalizado { 
+
+            background-color: yellow ; 
+
+
+
+
+        }
+
+
+
+    </style>
+    <script>
+        //inicio de script 
+
+
+        function personalize( caso1 , caso2  ) { 
+
+
+            document.getElementById('nome').style.background='yellow'
+
+            var valor = document.getElementById('nome').value 
+            if(valor.length <= 3)       {
+
+
+               caso1()
+
+
+
+
+
+            }else {
+
+                caso2() 
+                
+
+
+            }
+
+
+        }
+
+
+        var caso1 = function( ) {
+
+
+            document.getElementById('nome').style.background = 'red'
+
+
+
+
+        }
+
+        var caso2 = function(  ) {
+
+
+            document.getElementById('nome').style.background = 'green' 
+
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="nome" onfocus="personalize()" onblur="personalize()" onkeyup="personalize(caso1, caso2)" /> 
+</body>
+</html> 

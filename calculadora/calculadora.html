@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--estilo css-->
+    <link rel="stylesheet" href="estilo/estilo.css"> 
+    
+   
+</head> 
+
+<body>
+    
+    <div class="container">
+        <div class="form ">
+            <input type="text" placeholder="0" disabled="disabled" id="Entrada">
+
+
+        </div> <!--Div calculadora -->
+
+        <div class="primeira-linha-calculadora">
+
+            <button onclick="calc('acao', 'c')" type="button">C</button>
+            <button onclick="calc('acao',  '/')"type="button">/</button>
+            <button onclick="calc('acao', '*')" type="button">X</button>
+
+
+
+
+
+
+
+
+
+        </div> <!--Fim-primeira-Linha -->
+
+        
+
+        <div class="segunda-linha-calculadora">
+            <button onclick="calc('valor', 7)" type="button">7</button>
+            <button onclick="calc('valor', 8)" type="button">8</button>
+            <button  
+            onclick="calc('valor', 9)"type="button">9</button>
+            <button onclick="calc('acao' ,'-')"Type="button"> - </button>
+
+
+
+
+        </div> <!--Fim-Segunda-Linha -->
+
+
+        <div class="terceira-linha-calculadora">
+            <button onclick="calc('valor' ,4)"type="button">4</button>
+            <button onclick="calc('valor' ,5)"type="button">5</button>
+            <button onclick="calc('valor', 6)" type="button">6</button>
+            <button onclick="calc('acao' ,'+')" 
+            Type="button"> + </button>
+
+
+
+
+        </div> <!--Fim-terceira-linha --> 
+
+        
+        <div class="quarta-linha-calculadora">
+            <button onclick="calc('valor' ,3)" 
+            type="button">3</button>
+            <button onclick="calc('valor' ,2)" 
+            type="button">2</button>
+            <button onclick="calc('valor', 1)"
+            type="button">1</button>
+            <button onclick="calc('acao' ,'=')"
+            Type="button" class="especial "> = </button>
+
+           
+
+
+
+        </div> <!--Fim-quarta-linha --> 
+
+
+        <div class="quinta-linha-calculadora">
+            <button onclick="calc('valor' ,0)" 
+            type="button" class="esp1">0</button>
+            <button onclick="calc('acao', '.')" 
+            type="button" class="esp2">. </button>
+        
+
+
+        </div> <!--Fim-quinta-linh--> 
+
+
+
+    </div> <!--Container -->
+
+
+    <script src="script/script.js"></script>
+
+
+
+
+</body>

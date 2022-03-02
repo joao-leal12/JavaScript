@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--Inicio de script--> 
+<script> 
+var idade = prompt('Digite o ano de seu nascimento')
+
+function anoNascimento( resp ) {
+
+    var resposta = 2022 - resp 
+
+
+
+
+
+    return resposta 
+
+}
+
+
+resposta = anoNascimento(idade) 
+
+
+switch  (parseInt(resposta)){
+
+
+    case 23: 
+    
+    
+    document.write('Pode se alistar ')
+
+    var ferrou = 'Se lascou em '
+    break
+
+
+
+    case 17: 
+
+    document.write('Não pode se alistar ')
+
+    break 
+
+
+
+
+}  
+
+
+
+var ferrou = resposta === 23 ? 'Vai servir Ladrao ' : 'Sua hora vai chegar '
+
+document.write(ferrou)
+
+</script> <!--Condicionais2-->
+
+</head>
+<body>
+    
+</body>
+</html>

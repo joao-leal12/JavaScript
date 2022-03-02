@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <script>
+        
+        
+        function velocidadeCarro( ) {
+
+            var velocidade = prompt('Qual a velocidade ? ')
+
+
+            return velocidade 
+
+        }
+
+        var resposta = velocidadeCarro ( )
+
+        
+         switch (parseInt(resposta) ) {
+
+            case 60 : 
+
+            document.write('<h1> Velocidade Permitida  </h1> ')
+            var media = 'Liberado,  '
+            break 
+
+       
+            case 80:
+
+                document.write('<h1>  Velocidade permitida  </h1> ')
+                media = 'Liberado '
+            break 
+            
+
+            case 110: 
+
+                document.write('<h1>  Velocidade perigosa  </h1>')
+                media = 'liberado ' 
+            break
+
+
+            default: 
+
+                document.write('<h1> VELOCIDADE ULTRAPASSADA, PARE </h1> " ')
+                media = ' Você está preso,  '
+                
+            break  
+
+        } 
+
+
+
+
+
+
+
+
+        document.write(media)
+
+
+
+
+
+
+
+
+
+
+
+
+var multa = media === ' Você está preso,  ' ? 'multa de 5 reais': 'Não teve multa '
+
+
+document.write(multa)
+
+
+
+
+
+  
+        
+
+
+
+
+    </script> <!--Meu java script -->
+</head>
+<body>
+    
+</body>
+</html>
