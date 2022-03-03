@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Callback</title>
+    <script>  
+    function Teste (teste1, teste2) {
+
+        if(true) {
+
+            teste1('Acertei', 'Ora bolas')
+
+
+
+
+        }else {
+
+
+                teste2('Acertou?' , 'erro')
+
+
+        }
+
+
+
+
+    }
+       
+            
+   
+
+
+
+        var Parte = function (Res, Rip) {
+
+            document.write('VOce' + Res + Rip)
+
+
+
+
+        }
+
+        var Quote = function (Erro1, Erro2) {
+
+
+            document.write(Erro1 + Erro2 )
+
+
+
+
+        }
+        Teste(Parte , Quote)
+        </script> 
+
+
+</head>
+<body>
+    
+</body>
+</html>
