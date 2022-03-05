@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comando de repeticao</title>
+
+    <script> 
+    var idade = 0 
+    var resp = 'sim'
+    var media = 0 
+    var mediaIdades = 0 
+    var maiorVinte = 0 
+    while(resp === 'sim') {
+
+        var pergunta = prompt()
+        
+        if (pergunta > 0 ) {
+
+            idade = idade + 1  
+
+            if(pergunta > 21) {
+
+                maiorVinte += 1 
+                
+
+
+
+            }
+
+
+        }
+
+         media = (parseInt(media)+ parseInt(pergunta))
+
+         mediaIdades = media/idade
+
+        
+        
+       
+        resp = prompt('Quer continuar? ')
+
+
+
+    }
+   
+    document.write('A quantidade de idades digitadas foram ' + idade )
+    document.write('</br>')
+    document.write('A media das idades é ' + 
+    mediaIdades)
+    document.write('</br>')
+    document.write('A quantidade de pessoas com mais de 21 anos é ' + maiorVinte)
+
+    </script> 
+
+</head>
+<body>
+    
+
+
+
+</body>
+</html>

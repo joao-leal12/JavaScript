@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <script> 
+        
+        var objeto = Array('cadeira', 'impressora', 'garfo')
+        
+        function verificar() {
+
+            document.getElementById('att').value 
+            var nome = document.getElementById('att').value 
+            //se 
+            if(nome != '') {
+
+
+                if(objeto.indexOf(nome) !== -1) {
+
+                    alert('Valor já foi adicionado')
+
+
+
+
+                }else{
+
+                    objeto.push(nome)
+                    console.log(objeto)
+
+                    document.getElementById('att').value = ''
+
+
+                }
+
+
+
+
+            
+              
+
+
+            }  else{
+
+                alert('insira um valor correto')
+
+
+            }   
+
+
+
+
+
+        }
+        
+       
+
+        
+
+
+   
+     
+    function ordenarObjetos() {
+
+
+        objeto.sort()
+        console.log(objeto.sort())
+
+
+
+    }
+      
+    
+    </script>   
+
+</head>
+<body>
+
+
+    <input type="text" id="att">
+    <button onclick="verificar()" >Adicionar</button>
+    <button onclick="ordenarObjetos()">Ordenar</button>
+
+    
+    
+</body>
+</html>
