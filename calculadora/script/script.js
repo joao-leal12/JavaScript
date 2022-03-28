@@ -1,6 +1,6 @@
 //inicio 
 
-
+let Global = null 
 function calc(tipo, valor) {
 
     if(tipo === 'acao') {
@@ -31,8 +31,7 @@ function calc(tipo, valor) {
             var resposta = eval(document.getElementById('Entrada').value)
 
             document.getElementById('Entrada').value = resposta 
-
-
+            Global = 'J'
         }
 
     
@@ -47,5 +46,16 @@ function calc(tipo, valor) {
     }
 
 
+    if(tipo === 'valor' && Global === 'J') {
+
+
+        document.getElementById('Entrada').value = valor
+
+
+        Global = null
+
+
+    }
+    
 
 }
