@@ -13,7 +13,7 @@ function calc(tipo, valor) {
 
         }
 
-        if (valor === '*' || valor === '/' || valor === '+' || valor === '-'|| valor === '.') {
+        if (valor === '*' || valor === '/' || valor === '+' || valor === '-'|| valor === '.' || valor === '**') {
 
 
             document.getElementById('Entrada').value += valor 
@@ -33,6 +33,7 @@ function calc(tipo, valor) {
             document.getElementById('Entrada').value = resposta 
             Global = 'J'
         }
+                
 
     
 

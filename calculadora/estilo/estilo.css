@@ -62,9 +62,9 @@ button {
 
 
     display: grid;
-    grid-template-columns : 2fr repeat(2, 1fr);  
-    Grid-Template-Rows: repeat(1, 1fr);
-    grid-gap: 12px; 
+    grid-template-columns: repeat(4, 1fr);  
+    grid-gap: 12px;
+    margin-top: 15px; 
 
 
 
